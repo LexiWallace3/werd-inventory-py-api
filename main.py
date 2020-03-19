@@ -29,7 +29,7 @@ slope.save()
 
 
 tieDyeW = Clothes(title='Tie Dye W', size='m',
-                  colorsused='white/pink/black', type='hoodie', quantity=1)
+                  colorsused='white/pink/black/blue', type='hoodie', quantity=1)
 tieDyeW.save()
 
 
@@ -105,3 +105,70 @@ InfiniteThought.save()
 ReaperSweats = Clothes(title='Reaper', size='m',
                        colorsused='gray/black/red', type='sweat pant', quantity=1)
 ReaperSweats.save()
+
+CartiJeanJacket = Clothes(title='Playboi Carti Jean Jacket', size='l',
+                          colorsused='black/green/red/white', type='jean jacket', quantity=1)
+CartiJeanJacket.save()
+
+werdXchampionFlowers = Clothes(title='Werd x Champion', size='m',
+                               colorsused='navy blue/white/green/yellow', type='hoodie', quantity=1)
+werdXchampionFlowers.save()
+
+Sakura = Clothes(title='Sakura', size='m, l, xl',
+                 colorsused='white/red/pink/blue', type='hoodie', quantity=4)
+Sakura.save()
+
+
+NeonLogo = Clothes(title='Neon Logo', size='xl',
+                   colorsused='neon green/red', type='tShirt', quantity=1)
+NeonLogo.save()
+
+JapanesesWerdShort = Clothes(
+    title="'Werd' Shorts", size='m', colorsused='white', type='shorts', quantity=1)
+JapanesesWerdShort.save()
+
+OxymoronHoodie = Clothes(title='Oxy-moron', size='l',
+                         colorsused='blue/black/yellow/green/', type='hoodie', quantity=1)
+OxymoronHoodie.save()
+
+WhatchuWant = Clothes(title='Whatchu want from me', size='m, l',
+                      colorsused='white/black/green/blue', type='tShirt', quantity=3)
+WhatchuWant.save()
+
+
+WhatchuWantHoodie = Clothes(title='Whatchu want from me', size='m',
+                            colorsused='white/black/green/blue', type='hoodie', quantity=2)
+WhatchuWantHoodie.save()
+
+
+WhyTshirt = Clothes(title='Why', size='m, l, xl',
+                    colorsused='white/brown/black/green', type='tShirt', quantity=4)
+WhyTshirt.save()
+
+FlipSide = Clothes(title='Flip Side', size='m, l, xl',
+                   colorsused='white/black/blue/', type='tShirt', quantity=5)
+FlipSide.save()
+
+LongSleeveLogo = Clothes(title='Long Sleeve Logo', size='m, l, xl',
+                         colorsused='white/red', type='long sleeve', quantity=3)
+LongSleeveLogo.save()
+
+
+Spider = Clothes(title='Spider', size='m',
+                 colorsused='black/white/orange', type='tShirt', quantity=1)
+Spider.save()
+
+
+NavyBlueLogo = Clothes(title='Navy Blue Logo', size='m',
+                       colorsused='navy blue/white/red', type='tShirt', quantity=1)
+NavyBlueLogo.save()
+
+NoHardFeelings = Clothes(title='No Hard Feelings', size='m',
+                         colorsused='navy blue/yellow/red', type='tShirt', quantity=1)
+NoHardFeelings.save()
+
+AllEveryEverWanted = Clothes(title='All Everybody Ever Wanted', size='m',
+                             colorsused='tan/navy blue/white', type='tShirt', quantity=1)
+AllEveryEverWanted.save()
+
+SeeYouNever = Clothes(title='See You Never', size='m, l', colorused='black/')
