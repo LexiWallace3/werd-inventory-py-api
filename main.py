@@ -171,4 +171,10 @@ AllEveryEverWanted = Clothes(title='All Everybody Ever Wanted', size='m',
                              colorsused='tan/navy blue/white', type='tShirt', quantity=1)
 AllEveryEverWanted.save()
 
-SeeYouNever = Clothes(title='See You Never', size='m, l', colorused='black/')
+SeeYouNever = Clothes(title='See You Never', size='m, l',
+                      colorsused='black/red/white', type='hoodie', quantity=3)
+SeeYouNever.save()
+
+print('#######################################')
+print('           Werd inventory')
+print('#######################################')
