@@ -1,4 +1,5 @@
 from peewee import *
+from psycopg2 import *
 
 db = PostgresqlDatabase('inventory', user='postgres',
                         password='', host='localhost', port=5432)
@@ -176,5 +177,16 @@ SeeYouNever = Clothes(title='See You Never', size='m, l',
 SeeYouNever.save()
 
 print('#######################################')
-print('           Werd inventory')
+print('           Werd Inventory')
 print('#######################################')
+print('')
+inputType = input('Search type or click enter to see all products: ')
+
+cur = db.cursor()
+cur.execute(f"SELECT title, type from CLOTHES WHERE type = '{inputType}'")
+rows = cur.fetchall()
+for row in rows:
+    print('')
+    print('Name: ', row[0])
+    print('Type: ', row[1])
+    print('')
