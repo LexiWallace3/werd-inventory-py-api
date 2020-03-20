@@ -176,23 +176,79 @@ SeeYouNever = Clothes(title='See You Never', size='m, l',
                       colorsused='black/red/white', type='hoodie', quantity=3)
 SeeYouNever.save()
 
+
 print('#######################################')
 print('           Werd Inventory')
 print('#######################################')
 print('')
-inputType = input(
-    '***Search type or click enter to Search for an individual item: ')
 
-cur = db.cursor()
-cur.execute(f"SELECT title, type from CLOTHES WHERE type = '{inputType}'")
+
+inputType = input(
+    '-- -- Search type or click enter to view all items: ')
+
+if inputType == 'all' or 'All':
+    cur = db.cursor()
+cur.execute(
+    f"SELECT title from CLOTHES")
 rows = cur.fetchall()
 for row in rows:
-    print('')
+    print('---')
+    print('Name: ', row[0])
+
+
+cur = db.cursor()
+cur.execute(
+    f"SELECT title, type from CLOTHES WHERE type = '{inputType}'")
+rows = cur.fetchall()
+for row in rows:
+    print('---')
     print('Name: ', row[0])
     print('Type: ', row[1])
     print('')
 
-inputTitle = input('***Search individual items: ')
+inputTitle = input('-- -- Search individual items: ')
+cur = db.cursor()
+cur.execute(
+    f"SELECT title, size, colorsused, type, quantity from CLOTHES WHERE title = '{inputTitle}'")
+rows = cur.fetchall()
+for row in rows:
+    print('')
+    print('Name: ', row[0])
+    print('Sizes Available: ', row[1])
+    print('Colors Used: ', row[2])
+    print('Type: ', row[3])
+    print('Quantity: ', row[4])
+    print('')
+
+inputTitle = input('-- -- Search individual items: ')
+cur = db.cursor()
+cur.execute(
+    f"SELECT title, size, colorsused, type, quantity from CLOTHES WHERE title = '{inputTitle}'")
+rows = cur.fetchall()
+for row in rows:
+    print('')
+    print('Name: ', row[0])
+    print('Size(s) Available: ', row[1])
+    print('Colors Used: ', row[2])
+    print('Type: ', row[3])
+    print('Quantity: ', row[4])
+    print('')
+
+inputTitle = input('-- -- Search individual items: ')
+cur = db.cursor()
+cur.execute(
+    f"SELECT title, size, colorsused, type, quantity from CLOTHES WHERE title = '{inputTitle}'")
+rows = cur.fetchall()
+for row in rows:
+    print('')
+    print('Name: ', row[0])
+    print('Sizes Available: ', row[1])
+    print('Colors Used: ', row[2])
+    print('Type: ', row[3])
+    print('Quantity: ', row[4])
+    print('')
+
+inputTitle = input('-- -- Search individual items: ')
 cur = db.cursor()
 cur.execute(
     f"SELECT title, size, colorsused, type, quantity from CLOTHES WHERE title = '{inputTitle}'")
