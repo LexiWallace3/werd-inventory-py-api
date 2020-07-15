@@ -144,11 +144,11 @@ BeadedClips.save()
 
 print('')
 print('      #######################################')
-print('                  Werd Inventory')
+print('                 Accessories Inventory')
 print('      #######################################')
 print('')
 
-print('#### TYPES OF CLOTHES: hoodie, tShirt, shorts, pant, crew neck ####')
+print('#### TYPES OF ACCESSORIES: Sunglasses, Earings, Necklace, Hats, Belts, Hair ####')
 print('')
 
 cur = db.cursor()
@@ -159,7 +159,7 @@ inputType = input(
 
 if inputType == 'all':
     cur.execute(
-        f"SELECT title from CLOTHES")
+        f"SELECT title from ACCESSORIES")
     rows = cur.fetchall()
     for row in rows:
         print('---')
@@ -170,22 +170,21 @@ if inputType == 'all':
             '-- -- Search type or "all" to view all items: ')
     else:
         cur.execute(
-            f"SELECT title, size, colorsused, type, quantity from CLOTHES WHERE title = '{inputTitle}'")
+            f"SELECT title, colorsused, type, quantity from ACCESSORIES WHERE title = '{inputTitle}'")
     rows = cur.fetchall()
     for row in rows:
         print('---')
         print('Name: ', row[0])
-        print('Size: ', row[1])
-        print('Colors Used: ', row[2])
-        print('Type: ', row[3])
-        print('Quantity: ', row[4])
+        print('Colors Used: ', row[1])
+        print('Type: ', row[2])
+        print('Quantity: ', row[3])
         print('')
 
 
-if inputType == 'hoodie' or 'tShirt' or 'pant' or 'shorts' or 'crew neck':
+if inputType == 'sunglasses' or 'earrings' or 'necklace' or 'belts' or 'hat' or 'hair':
 
     cur.execute(
-        f"SELECT title, type from CLOTHES WHERE type = '{inputType}'")
+        f"SELECT title, type from Accessories WHERE type = '{inputType}'")
     rows = cur.fetchall()
     for row in rows:
         print('---')
@@ -198,15 +197,14 @@ if inputType == 'hoodie' or 'tShirt' or 'pant' or 'shorts' or 'crew neck':
             '-- -- Search type or "all" to view all items: ')
     else:
         cur.execute(
-            f"SELECT title, size, colorsused, type, quantity from CLOTHES WHERE title = '{inputTitle}'")
+            f"SELECT title, colorsused, type, quantity from ACCESSORIES WHERE title = '{inputTitle}'")
     rows = cur.fetchall()
     for row in rows:
         print('---')
         print('Name: ', row[0])
-        print('Size: ', row[1])
-        print('Colors Used: ', row[2])
-        print('Type: ', row[3])
-        print('Quantity: ', row[4])
+        print('Colors Used: ', row[1])
+        print('Type: ', row[2])
+        print('Quantity: ', row[3])
         print('')
 
 # inputType = input(
@@ -215,7 +213,7 @@ if inputType == 'hoodie' or 'tShirt' or 'pant' or 'shorts' or 'crew neck':
 
 if inputType == 'all':
     cur.execute(
-        f"SELECT title from CLOTHES")
+        f"SELECT title from ACCESSORIES")
     rows = cur.fetchall()
     for row in rows:
         print('---')
@@ -226,22 +224,20 @@ if inputType == 'all':
             '-- -- Search type or click enter to view all items: ')
     else:
         cur.execute(
-            f"SELECT title, size, colorsused, type, quantity from CLOTHES WHERE title = '{inputTitle}'")
+            f"SELECT title, colorsused, type, quantity from ACCESSORIES WHERE title = '{inputTitle}'")
     rows = cur.fetchall()
     for row in rows:
         print('---')
         print('Name: ', row[0])
-        print('Size: ', row[1])
-        print('Colors Used: ', row[2])
-        print('Type: ', row[3])
-        print('Quantity: ', row[4])
+        print('Colors Used: ', row[1])
+        print('Type: ', row[2])
+        print('Quantity: ', row[3])
         print('')
 
 
-if inputType == 'hoodie' or 'tShirt' or 'pant' or 'shorts' or 'crew neck':
-
+if inputType == 'sunglasses' or 'earrings' or 'necklace' or 'belts' or 'hat' or 'hair':
     cur.execute(
-        f"SELECT title, type from CLOTHES WHERE type = '{inputType}'")
+        f"SELECT title, type from ACCESSORIES WHERE type = '{inputType}'")
     rows = cur.fetchall()
     for row in rows:
         print('---')
@@ -254,13 +250,12 @@ if inputType == 'hoodie' or 'tShirt' or 'pant' or 'shorts' or 'crew neck':
             '-- -- Search type or click enter to view all items: ')
     else:
         cur.execute(
-            f"SELECT title, size, colorsused, type, quantity from CLOTHES WHERE title = '{inputTitle}'")
+            f"SELECT title, colorsused, type, quantity from ACCESSORIES WHERE title = '{inputTitle}'")
     rows = cur.fetchall()
     for row in rows:
         print('---')
         print('Name: ', row[0])
-        print('Size(s) available: ', row[1])
-        print('Colors Used: ', row[2])
-        print('Type: ', row[3])
-        print('Quantity: ', row[4])
+        print('Colors available: ', row[1])
+        print('Type: ', row[2])
+        print('Quantity: ', row[3])
         print('')
