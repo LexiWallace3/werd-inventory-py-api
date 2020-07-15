@@ -30,66 +30,71 @@ Aviators = Accessories(title='Aviators',
                 type='Sunglasses', quantity=25)
 Aviators.save()
 
-
 Round = Accessories(title='Round', 
                   colorsused='black/gunmetal-green/bronze copper-pink/bronze-copper blue'
                    type='Sunglasses', quantity=20)
 Round.save()
 
-
 Hexagonal = Accessories(title='Hexagonal', 
                         colorsused='lack/grey-gunmetal/bronze-copper/gold-blue', type='Sunglasses', quantity=20)
 Hexagonal.save()
 
+CrissCross = Accessories(title='Criss cross',
+                        colorsused='silver/gold', type='Earrings', quantity=10)
+CrissCross.save()
 
+LittleStud = Accessories(title='Little Stud'
+              colorsused='gold/silver', type='Earrings', quantity=10)
+LittleStud.save()
 
-CherryBlossom = Clothes(title='Cherry Blossom',
-                        size='l, xl', colorsused='white', type='hoodie', quantity=3)
-CherryBlossom.save()
+SharpShooter = Accessories(title='Sharp Shooter', 
+               colorsused='gold/silver', type='Earrings', quantity=10)
+SharpShooter.save()
 
-Sev = Clothes(title='7/11', size='m, l',
-              colorsused='white', type='hoodie', quantity=3)
-Sev.save()
+ShotintheDark = Accessories(title='Shot in the Dark',
+                          colorsused='gold', type='Earrings', quantity=15)
+ShotinthDark.save()
 
-Mask = Clothes(title='Mask', size='m, l',
-               colorsused='black/white/red', type='hoodie', quantity=6)
-Mask.save()
+Illusion = Accessories(title='Illusion', 
+                 colorsused='gold', type='Earring', quantity=15)
+Illusion.save()
 
-FlowersStillDie = Clothes(title='Flowers still die', size='m',
-                          colorsused='white/yellow/green/black', type='tShirt', quantity=1)
-FlowersStillDie.save()
+Stealth = Accessories(title='Stealth', 
+                  colorsused='gold', type='Earrings', quantity=10)
+Stealth.save()
 
-OnMars = Clothes(title='On Mars', size='m, l',
-                 colorsused='white/pink/blue', type='tShirt', quantity=2)
-OnMars.save()
+StuddedWings = Accessories(title='Studded wings',
+                       colorsused='gold', type='Earings', quantity=10)
+StuddedWings.save()
 
-Falling = Clothes(title='Falling', size='m',
-                  colorsused='white/black/red/yellow/blue', type='tShirt', quantity=1)
-Falling.save()
+ButterflyHoop = Accessories(title='Butterfly Hoop', 
+                   colorsused='gold', type='Earings', quantity=10)
+ButterflyHoop.save()
 
-PolaroidEyes = Clothes(title='Polaroid Eyes', size='m',
-                       colorsused='blue/black/white', type='tShirt', quantity=1)
-PolaroidEyes.save()
+OpenHoop = Accessories(title='Open Hoop', 
+                         colorsused='gold/silver/gunmetal', type='Earrings', quantity=12)
+OpenHoop.save()
 
-CamoLogo = Clothes(title='Camo Logo', size='l',
-                   colorsused='camo/white', type='tShirt', quantity=1)
-CamoLogo.save()
+Refinery = Accessories(title='Refinery',
+                  colorsused='gold/silver', type='Earrings', quantity=10)
+Refinery.save()
 
-camoCollective = Clothes(title='Camo 2nd Logo', size='l',
-                         colorsused='camo/white', type='tShirt', quantity=1)
-camoCollective.save()
+Initial = Accessories(title='Initial', 
+                   colorsused='rose/gold/silver', type='Necklace', quantity=15)
+Initial.save()
 
-NoSleep = Clothes(title='No Sleep', size='s, m, l',
-                  colorsused='white/green/blue/black', type='tShirt', quantity=3)
-NoSleep.save()
+Coordinates = Accessories(title='Coordinates',
+                  colorsused='gold/silver', type='Necklace', quantity=10)
+Coordinates.save()
 
-WerdPant = Clothes(title='Repeating Logo Pants', size='30/32',
-                   colorsused='navy blue/white/red', type='pant', quantity=1)
-WerdPant.save()
+Lock&Key = Accessories(title='Love Hurts',
+                          colorsused='gold', type='Necklace', quantity=10)
+Lock&Key.save()
 
-EyePant = Clothes(title='Eye pants', size='32/34',
-                  colorsused='black/white/red', type='pant', quantity=1)
-EyePant.save()
+SUR = Accessories(title='SUR', colorsused='gold/silver', type='Necklace', quantity=10)
+
+SUR.save()
+
 
 LoveHurtsSweats = Clothes(title='Love Hurts', size='m',
                           colorsused='black/white/yellow/green', type='sweat pant', quantity=1)
