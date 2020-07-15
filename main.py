@@ -11,9 +11,8 @@ class BaseModel(Model):
         database = db
 
 
-class Clothes(BaseModel):
+class Acessories(BaseModel):
     title = CharField()
-    size = CharField()
     colorsused = CharField()
     type = CharField()
     quantity = IntegerField()
@@ -21,23 +20,27 @@ class Clothes(BaseModel):
 
 db.connect()
 
-db.drop_tables([Clothes])
-db.create_tables([Clothes])
+db.drop_tables([Accessories])
+db.create_tables([Acessories])
 
 
-slope = Clothes(title='Slope', size='s, m, l, xl',
-                colorsused='white/red', type='hoodie', quantity=5)
-slope.save()
+
+Aviators = Accessories(title='Aviators', 
+                colorsused=' black/gold-lightbrown/gunmetal-lightbrown/gunmetal-blue/bronze-copper pink/bronze-copper grey', 
+                type='Sunglasses', quantity=25)
+Aviators.save()
 
 
-tieDyeW = Clothes(title='Tie Dye W', size='m',
-                  colorsused='white/pink/black/blue', type='hoodie', quantity=1)
-tieDyeW.save()
+Round = Accessories(title='Round', 
+                  colorsused='black/gunmetal-green/bronze copper-pink/bronze-copper blue'
+                   type='Sunglasses', quantity=20)
+Round.save()
 
 
-GoodVibesXwerd = Clothes(title='Good Vibes', size='m',
-                         colorsused='tan/black/red', type='hoodie', quantity=1)
-GoodVibesXwerd.save()
+Hexagonal = Accessories(title='Hexagonal', 
+                        colorsused='lack/grey-gunmetal/bronze-copper/gold-blue', type='Sunglasses', quantity=20)
+Hexagonal.save()
+
 
 
 CherryBlossom = Clothes(title='Cherry Blossom',
