@@ -1,2 +1,2 @@
 # Inventory Tracking - Accessories
-For my project I will be creating a simple inventory tracking system for a small store that will allow me to track various types of Accessories we have, amount we have in stock and colors available. The goal for this is to be able to easily keep track of items being sold and see what's high in sales vs low. 
+For my project I want to be able to look a current inventory for a business and be able to see what we have in stock as well as the Items that have been sold . The goal for this is to be able to easily keep track of items being sold and see what's high in sales vs low. 
